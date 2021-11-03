@@ -21,97 +21,101 @@
 <body>
     <div id="agrupar">
         <header id="cabecera">
-            <img id="bola" src="/img/bola8.png" alt="">
+            <img id="bola" src="./img/bola8.png" alt="">
             <div id="textopool">
                 Pool
             </div>
         </header>
-        <div id="barra-menu">
-            <nav id="menu">
-                <ul><a href="#barra-menu">Inicio</a></ul>
-                <ul><a href="#seccion2">Nosotros</a></ul>
-                <ul><a href="#articulos">Tienda</a></ul>
-            </nav>
-            <div id="columna-container">
-                <div id="columna2">
-                    <form novalidate name="miFormulario" id="miFormulario">
-                        <input id="campo" type="text" name="nombre" placeholder="Nombre"><br>
-                        <input id="campo1" type="password" placeholder="Contraseña"><br>
-                        <button id="boton" type="button" class="btn btn-warning" style="margin-left: 5%;">Iniciar
-                            sesión</button>
+        <div id="contenedor-menu">
+            <div id="barra-menu">
+                <nav id="menu">
+                    <ul><a href="#barra-menu">Inicio</a></ul>
+                    <ul><a href="#seccion2">Nosotros</a></ul>
+                    <ul><a href="#articulos">Tienda</a></ul>
+                </nav>
+                <div id="columna-container">
+                    <div id="columna2">
+                        <form novalidate name="miFormulario" id="miFormulario">
+                            <input id="campo" type="text" name="nombre" placeholder="Nombre"><br>
+                            <input id="campo1" type="password" placeholder="Contraseña"><br>
+                            <button id="boton" type="button" class="btn btn-warning" style="margin-left: 5%;">Iniciar
+                                sesión</button>
 
-                    </form>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
-        <div id="contenedor-principal">
-            <div style="margin-left: 75%;" id="user"></div>
+        <div id="seccion-uno">
+            <div id="contenedor-principal">
+                <div style="margin-left: 75%;" id="user"></div>
 
-            <section id="seccion">
-                <section class="section-container">
-                    <div id="articulos">
-                        <h1>Tienda</h1>
-                    </div>
-                    <div class="container-modulo">
-                        <div style="margin-left: 7%;">
-                            <article class="box">
-                                <div class="modulo1">
-                                    <img id="img1" src="/img/bola.jpg" alt="">
-                                    <h6>Juego de bolas de pool</h6>
-                                    <p>Valor: $50.000
-                                    </p>
-
-                                    <div id="stock"></div>
-
-                                </div>
-                                <button id="btnBolas" onclick="PlaySound('billar')" onchange="StopSound('billar')"
-                                    type="button" class="btn btn-warning">Añadir al carro</button>
-
-                            </article>
-                            <article class="box">
-                                <div class=" modulo2">
-                                    <img id="img2" src="/img/mesa2.jpg" alt="">
-                                    <h6>Taco de pool</h6>
-                                    <p>Valor: $60.000
-                                    </p>
-
-                                    <div id="stock3"></div>
-
-
-                                </div>
-                                <button id="btnTaco" onclick="PlaySound('billar')" onchange="StopSound('billar')"
-                                    type="button" class="btn btn-warning">Añadir al carro</button>
-
-                            </article>
+                <section id="seccion">
+                    <section class="section-container">
+                        <div id="articulos">
+                            <h1>Tienda</h1>
                         </div>
-                        <div>
-                            <article class="box">
-                                <div class="modulo3">
-                                    <img id="img3" src="/img/billar3.jpg" alt="">
-                                    <h6>Paño de mesa</h6>
-                                    <p>Valor: $50.000
-                                    </p>
+                        <div class="container-modulo">
+                            <div style="margin-left: 7%;">
+                                <article class="box">
+                                    <div class="modulo1">
+                                        <img id="img1" src="./img/bola.jpg" alt="">
+                                        <h6>Juego de bolas de pool</h6>
+                                        <p>Valor: $50.000
+                                        </p>
 
-                                    <div id="stock2"></div>
+                                        <div id="stock"></div>
 
-                                </div>
-                                <button id="btnPano" onclick="PlaySound('billar')" onchange="StopSound('billar')"
-                                    type="button" class="btn btn-warning">Añadir al carro</button>
+                                    </div>
+                                    <button id="btnBolas" onclick="PlaySound('billar')" onchange="StopSound('billar')"
+                                        type="button" class="btn btn-warning">Añadir al carro</button>
 
-                            </article>
-                            <article class="box">
-                                <div class="modulo4">
-                                    <img id="img4" src="/img/mesa1.jpg" alt="">
-                                    <h6>Mesa de pool</h6>
-                                    <p>Valor:
-                                        $350.000
-                                    </p>
-                                    <div id="stock4"></div>
+                                </article>
+                                <article class="box">
+                                    <div class=" modulo2">
+                                        <img id="img2" src="./img/mesa2.jpg" alt="">
+                                        <h6>Taco de pool</h6>
+                                        <p>Valor: $60.000
+                                        </p>
 
-                                </div>
-                                <button id="btnMesa" onclick="PlaySound('billar')" onchange="StopSound('billar')"
-                                    type="button" class="btn btn-warning">Añadir al carro</button>
-                            </article>
+                                        <div id="stock3"></div>
+
+
+                                    </div>
+                                    <button id="btnTaco" onclick="PlaySound('billar')" onchange="StopSound('billar')"
+                                        type="button" class="btn btn-warning">Añadir al carro</button>
+
+                                </article>
+                            </div>
+                            <div>
+                                <article class="box">
+                                    <div class="modulo3">
+                                        <img id="img3" src="./img/billar3.jpg" alt="">
+                                        <h6>Paño de mesa</h6>
+                                        <p>Valor: $50.000
+                                        </p>
+
+                                        <div id="stock2"></div>
+
+                                    </div>
+                                    <button id="btnPano" onclick="PlaySound('billar')" onchange="StopSound('billar')"
+                                        type="button" class="btn btn-warning">Añadir al carro</button>
+
+                                </article>
+                                <article class="box">
+                                    <div class="modulo4">
+                                        <img id="img4" src="./img/mesa1.jpg" alt="">
+                                        <h6>Mesa de pool</h6>
+                                        <p>Valor:
+                                            $350.000
+                                        </p>
+                                        <div id="stock4"></div>
+
+                                    </div>
+                                    <button id="btnMesa" onclick="PlaySound('billar')" onchange="StopSound('billar')"
+                                        type="button" class="btn btn-warning">Añadir al carro</button>
+                                </article>
+                            </div>
                             <article class="box2">
                                 <div class="modulo5">
 
@@ -176,41 +180,46 @@
 
                                 </div>
                             </article>
-                            <h6>Datos para desarrollo</h6>
-                            <h6>Usuario: user</h6>
-                            <h6>Contraseña: 123</h6>
-                        </div>
-                    </div>
-                </section>
-                <section id="seccion2">
-                    <h1>Nosotros</h1>
-                    <div id="articulo2">
-                        <div id="contenedor3">
-                            <div id="art4">
-                                <img id="img5" src="/img/mesa.jpg" alt="">
-                                <div id="parrafo">
-                                    Con más de 9 años en el mercado, 8 pool, se ha encargado de satisfacer las
-                                    expectativas de los fanáticos de este deporte. Nuestra misión es buscar y distribuir
-                                    los mejores insumos para la práctica del pool.
-                                </div>
-                            </div>
-                            <div id="columna-container2">
-                                <div id="columna">
-                                    <h3>La jugada de la semana</h3>
-                                    <div id="seccion-uno">
-                                        <video class="medidas" src="/media/bolas1.mp4" loop preload="auto" autoplay
-                                            muted controls;></video>
-                                    </div>
-                                    <audio id="billar" preload="auto" src="/media/billar.mp3"></audio>
-                                    <audio id="alert" preload="auto" src="/media/alerta.mp3"></audio>
-                                    <audio preload="auto" src="/media/billar.ogg"></audio>
 
+                        </div>
+                    </section>
+                </section>
+            </div>
+            <div id="datos">
+                <h6>Datos para desarrollo</h6>
+                <h6>Usuario: user</h6>
+                <h6>Contraseña: 123</h6>
+            </div>
+            <section id="seccion2">
+                <h1>Nosotros</h1>
+                <div id="articulo2">
+                    <div id="contenedor3">
+                        <div id="art4">
+                            <img id="img5" src="./img/mesa.jpg" alt="">
+                            <div id="parrafo">
+                                Con más de 9 años en el mercado, 8 pool, se ha encargado de satisfacer las
+                                expectativas de los fanáticos de este deporte. Nuestra misión es buscar y distribuir
+                                los mejores insumos para la práctica del pool.
+                            </div>
+                        </div>
+                        <div id="columna-container2">
+                            <div id="columna">
+                                <h3>La jugada de la semana</h3>
+
+                                <div id="seccion-dos">
+                                    <video class="medidas" src="./media/bolas1.mp4" loop preload="auto" autoplay muted
+                                        controls;></video>
                                 </div>
+                                <audio id="billar" preload="auto" src="./media/billar.mp3"></audio>
+                                <audio id="alert" preload="auto" src="./media/alerta.mp3"></audio>
+                                <audio preload="auto" src="./media/billar.ogg"></audio>
                             </div>
                         </div>
                     </div>
-                </section>
+                </div>
+
             </section>
+
 
             <footer id="pie">
                 <h6 id="derechos"> Derechos reservados 2021</h6>
